@@ -1,4 +1,4 @@
-package com.sethip.applications;
+package com.sethip.main.applications;
 
 import java.io.BufferedReader;
 import java.io.IOException;
