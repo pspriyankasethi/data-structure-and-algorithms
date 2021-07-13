@@ -48,7 +48,7 @@ public class MazeSolverDFS {
     public MazeSolverDFS(int[][] maze, Pair<Integer, Integer> destination) {
         this.maze = maze;
         this.totalRows = maze.length;
-        this.totalCols = maze[0].length;
+        this.totalCols = totalRows > 0 ? maze[0].length : 0;
         this.destination = destination;
         this.escapeRoute = new char[totalRows][totalCols];
         for(int i = 0; i < totalRows; i++) {

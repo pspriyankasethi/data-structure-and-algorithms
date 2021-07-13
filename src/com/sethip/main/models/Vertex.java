@@ -1,6 +1,6 @@
 package com.sethip.main.models;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Vertex {
@@ -10,7 +10,7 @@ public class Vertex {
 
     public Vertex(String name) {
         this.name = name;
-        this.neighbors = new LinkedList<>();
+        this.neighbors = new ArrayList<>();
     }
 
     public boolean isVisited() {
