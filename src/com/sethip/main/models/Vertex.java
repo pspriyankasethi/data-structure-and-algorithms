@@ -6,6 +6,7 @@ import java.util.List;
 public class Vertex {
     String name;
     boolean visited;
+    boolean beingVisited;
     List<Vertex> neighbors;
 
     public Vertex(String name) {
@@ -19,6 +20,14 @@ public class Vertex {
 
     public void setVisited(boolean visited) {
         this.visited = visited;
+    }
+
+    public boolean isBeingVisited() {
+        return beingVisited;
+    }
+
+    public void setBeingVisited(boolean beingVisited) {
+        this.beingVisited = beingVisited;
     }
 
     public List<Vertex> getNeighbors() {
